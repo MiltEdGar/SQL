@@ -1,0 +1,15 @@
+SELECT *
+FROM superstore
+WHERE price
+ORDER BY price DESC;
+SELECT MAX(price)
+FROM superstore;
+SELECT SUM(price), category
+FROM superstore
+WHERE category='Electronics';
+--How many electronics were sold with an avg rating of 4.20 or higher?
+
+SELECT average_rating, category
+FROM superstore
+WHERE category='Electronics'
+ORDER BY average_rating <=4.20;
